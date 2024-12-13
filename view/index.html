@@ -14,15 +14,13 @@
         <p>Digite os dados para acessar a plataforma</p>
 
         <div class="form-group">
-            <form>
+            
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
                 <label for="password">Senha:</label>
                 <input type="password" id="password" name="password" placeholder="Digite sua senha">
 
-                <div class="error">
-                    <p>Dados incorretos.</p>
-                </div>
+                <div class="error" id="error" hidden>Dados incorretos</div>
 
                 <button onclick="validarUsuario()" >Entrar</button>
             </form>
